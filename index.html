@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>One Page Website</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <nav>
+    <a href="#Inicio">Inicio</a>
+    <a href="#Acerca">Acerca de</a>
+    <a href="#Servicios">Servicios</a>
+    <a href="#Contacto">Contacto</a>
+  </nav>
+  
+  <section class="Inicio">
+    <h1>Bienvenido a mi sitio web</h1>
+    <p>Este es un sitio web estilo One Page con 4 secciones</p>
+  </section>
+  
+  <section class="Acerca">
+    <h1>Acerca de mí</h1>
+    <p>Soy un desarrollador web con experiencia en HTML, CSS, JavaScript y otras tecnologías web. Me encanta crear sitios web atractivos y funcionales que ayuden a mis clientes a alcanzar sus objetivos en línea.</p>
+  </section>
+  
+  <section id="Servicios">
+    <h1>Servicios</h1>
+    <p>Ofrezco una variedad de servicios de desarrollo web, incluyendo diseño y desarrollo de sitios web, optimización de motores de búsqueda, marketing en redes sociales y más. Contáctame para discutir cómo puedo ayudarte con tu próximo proyecto en línea.</p>
+  </section>
+  
+  <section id="Contacto">
+    <h1>Contacto</h1>
+    <p>Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en ponerte en contacto conmigo. Puedes enviarme un correo electrónico a contacto@misitioweb.com o completar el formulario de contacto a continuación.</p>
+    <form action="submit-form.php" method="post">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
