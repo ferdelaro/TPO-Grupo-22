@@ -1,4 +1,8 @@
 nav {
+  position: fixed;
+  top: 0 ;
+  left: 0;
+  width: 100%;
   background-color: #333;
   display: flex;
   justify-content: space-around;
@@ -38,8 +42,50 @@ section:nth-child(odd) {
 section:nth-child(even) {
 background-color: white;
 }
-          
-@media screen and (max-width: 480px) {
+.GrupoDatosFormulario{
+  display: grid;
+  grid-template: 33% 33% auto / 50% 50%;
+  grid-template-areas: "Nombre Email"
+                       "Mensaje Mensaje"
+                       "BotonEnvio BotonEnvio";
+  gap:5px;
+  padding: 15px;
+}     
+.Nombre{grid-area: Nombre; height: max-content;}
+.Email{grid-area: Email; height: max-content;}
+.Mensaje{grid-area: Mensaje;height: fit-content;}
+.BotonEnvio{grid-area: BotonEnvio;height: fit-content;}
+
+.Formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.GrupoDatosFormulario {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+}
+
+.GrupoDatosFormulario label {
+  justify-self: end;
+}
+
+.GrupoDatosFormulario input,
+.GrupoDatosFormulario textarea {
+  padding: 5px;
+  width: 100%;
+}
+
+.GrupoDatosFormulario input[type="submit"] {
+  justify-self: center;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
 nav {
     flex-direction: column;
     height: auto;
@@ -48,6 +94,13 @@ nav a {
       display: block;
       margin-bottom: 10px;
       }
+.GrupoDatosFormulario{
+  grid-template: 25% 25% 25% 25% / 100%;
+  grid-template-areas: "Nombre"
+                       "Email"
+                       "Mensaje"
+                       "BotonEnvio";
+}     
 }
 @media screen and (min-width: 481px) and (max-width: 960px) {
 nav {

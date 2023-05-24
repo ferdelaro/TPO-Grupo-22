@@ -5,6 +5,7 @@
   <title>One Page Website</title>
   <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
+  <script src="https://kit.fontawesome.com/e03622c599.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <nav>
@@ -15,19 +16,19 @@
     <a href="#Contacto">Contacto</a>
   </nav>
   
-  <section class="Inicio">
+  <section id="Inicio">
     <h1>Bienvenido a mi sitio web</h1>
-    <p>Este es un sitio web estilo One Page con 4 secciones - Estoy porbando git </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe, voluptatum reiciendis cum doloremque corporis eum tempora veritatis quo possimus sapiente consequatur maiores enim sit nam unde corrupti? Cupiditate, mollitia. </p>
   </section>
   
-  <section class="Acerca">
+  <section id="Acerca">
     <h1>Acerca de mí</h1>
-    <p>Soy un desarrollador web con experiencia en HTML, CSS, JavaScript y otras tecnologías web. Me encanta crear sitios web atractivos y funcionales que ayuden a mis clientes a alcanzar sus objetivos en línea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur culpa, aliquid minima ipsum ut dolore doloribus dolor iusto alias repudiandae. Deleniti quod officia vero adipisci cumque ut, odit autem porro.</p>
   </section>
   
   <section id="Servicios">
     <h1>Servicios</h1>
-    <p>Ofrezco una variedad de servicios de desarrollo web, incluyendo diseño y desarrollo de sitios web, optimización de motores de búsqueda, marketing en redes sociales y más. Contáctame para discutir cómo puedo ayudarte con tu próximo proyecto en línea.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto nesciunt nobis laborum esse voluptas porro neque numquam! Corrupti voluptatum voluptates libero nobis ipsam aperiam exercitationem, quaerat eius tempore deleniti!</p>
   </section>
   
 <section id="Ubicacion">
@@ -37,17 +38,37 @@
 
 <section id="Contacto">
   <h1>Contacto</h1>
-  <p>Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en ponerte en contacto conmigo. Puedes enviarme un correo electrónico a contacto@misitioweb.com o completar el formulario de contacto a continuación.</p>
-  <form action="submit-form.php" method="post">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name" required>
-      
-    <label for="email">email</label>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, voluptates sequi nostrum inventore incidunt enim facere. Maxime numquam, fuga ipsam a voluptate quisquam sit, fugiat enim sunt temporibus expedita optio.</p>
+  <div class="Informacion de contacto"> 
+<h3>Mas Informacion</h3>
+<ul>
+  <li><i class="fa-solid fa-envelope"></i>info@info.com</li>
+  <li><i class="fa-solid fa-phone"></i>+54-911-4047-3293</li>
+  <li><i class="fa-solid fa-map-marker"></i>Direccion 1, CABA</li>
+</ul>
+  </div>
+  <div class="FormularioContacto">
+  <form class="Formulario" action="submit-form.php" method="post">
+    <div class="GrupoDatosFormulario">
+    <div class="Nombre">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" name="Nombre" required>
+    </div>
+
+    <div class="Email">
+    <label for="email">E-mail</label>
     <input type="text" id="email" name="emai" required>
+    </div>
 
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message" required></textarea>
+    <div class="Mensaje">
+    <label for="Mansaje">Mensaje:</label>
+    <textarea id="Mensaje" name="Mensaje" required></textarea>
+    </div>
 
+    <div class="BotonEnvio">
     <input type="submit" value="Enviar" onclick="verificar()">
+    </div>
+  </div>
   </form>
+</div>
 <section>

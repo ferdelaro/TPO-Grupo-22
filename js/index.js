@@ -13,4 +13,14 @@ function verificar() {
     } else {
         alert("El correo electrónico es inválido");
     }
+    var nombre = document.getElementById("Nombre").value;
+    var email = document.getElementById("email").value;
+    if (nombre.trim() === "") {
+			alert("Por favor, ingrese su nombre.");
+			return false;
+	}
+	if (email.trim() === "") {
+		alert("Por favor, ingrese su correo electrónico.");
+		return false;
+	}
 }
