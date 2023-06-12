@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>One Page Website</title>
   <link rel="stylesheet" href="css/index.css">
   <script src="js/index.js"></script>
   <script src="https://kit.fontawesome.com/e03622c599.js" crossorigin="anonymous"></script>
+  <script src="https://api.pexels.com/v1/search?query=nature&per_page=8&page=1&orientation=landscape&size=large&type=photo"></script>
 </head>
 <body>
   <nav>
@@ -17,8 +19,10 @@
   </nav>
   
   <section id="Inicio">
-    <h1>Bienvenido a mi sitio web</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe, voluptatum reiciendis cum doloremque corporis eum tempora veritatis quo possimus sapiente consequatur maiores enim sit nam unde corrupti? Cupiditate, mollitia. </p>
+    <h1>La Fuerza de la naturaleza</h1>
+    <div id="image-container">
+      <!-- Aquí se mostrará la imagen -->
+    </div>
   </section>
   
   <section id="Acerca">
@@ -66,7 +70,15 @@
     </div>
 
     <div class="BotonEnvio">
-    <input type="submit" value="Enviar" onclick="verificar()">
+    <input type="submit" value="Enviar" onclick="return verificar()">
+    </div>
+
+    <div id="mensaje-enviado">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
+      <span>¡Formulario enviado con éxito!</span>
     </div>
   </div>
   </form>
